@@ -46,9 +46,9 @@ main {
 
 /*apply accent colour to links*/
 
-a:link, a:visited {
+/* a:link, a:visited {
     color: var(--accent);
-}
+} */
 
 a.icon:hover {
     text-decoration: none;
@@ -97,4 +97,12 @@ footer {
 
 img {
     max-width: 100%;
+}
+
+li {
+    word-break: break-all
+}
+
+p {
+    word-break: break-all
 }
