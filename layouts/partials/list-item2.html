@@ -16,7 +16,7 @@
     {{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006") | $.Scratch.Set "subtitle" }}
     {{ with .Description }} {{ $.Scratch.Set "subtitle" . }} {{ end }}
 
-    <h1><a href="{{ .Scratch.Get "link" }}">{{ .Title }}</a></h1>
+    <h3><a href="{{ .Scratch.Get "link" }}">{{ .Title }}</a></h3>
     {{ range .Params.tags }}
     <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}"><kbd class="item-tag">{{ . }}</kbd></a>
     {{ end }}
