@@ -5,6 +5,14 @@
     {{ partial "list-item" . }}
 
     <br> <div class="text-justify">{{ .Content }}</div>
+    
+    <h4 class="page-header">광고 보고 올게요</h4>
+    <div>
+        <a href="https://coupa.ng/bgymdh" target="_blank"><img src="https://static.coupangcdn.com/image/affiliate/banner/f895d8c26a786acac2e495f20f75f3f5@2x.jpg" alt="동원샘물 미네마인,..." width="120" height="240"></a>
+        <a href="https://coupa.ng/bgymhb" target="_blank"><img src="https://static.coupangcdn.com/image/affiliate/banner/faedb473a86f1008e4e2f2640910ac48@2x.jpg" alt="코디 라벤더 3겹 ..." width="120" height="240"></a>
+        <a href="https://coupa.ng/bgymhP" target="_blank"><img src="https://static.coupangcdn.com/image/affiliate/banner/eb55717748053de8519105d28200fda0@2x.jpg" alt="이롬 황성주 국산콩..." width="120" height="240"></a>
+        <a href="https://coupa.ng/bgymiv" target="_blank"><img src="https://static.coupangcdn.com/image/affiliate/banner/623618dd3db2260d84e4f6dc42341167@2x.jpg" alt="키친아트 아크바 에..." width="120" height="240"></a>
+    </div>
 
     <!-- related posts with the same tags -->
     {{ $related := first 3 (where (where (where .Site.Pages.ByDate.Reverse ".Type" "==" "post") ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}
